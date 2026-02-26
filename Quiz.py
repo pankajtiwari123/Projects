@@ -38,6 +38,9 @@ def Quizz():
             if score == 5:
                 st.write("Wow! You have won the Quiz....with 1st Position")
                 st.balloons()
+            elif score == 4:
+                st.write("Wow! You have won the Quiz....with 2nd Position")
+                st.balloons()
             else:
                 st.write("You have scored good  may be beeter score next time.......")
     else:
