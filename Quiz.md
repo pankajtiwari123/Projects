@@ -1,2 +1,1 @@
-# Projects
-Project list including python codes
+App link - https://projects-cxmxs9zsxtwbgkzgde5gbq.streamlit.app/
