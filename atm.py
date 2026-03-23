@@ -1,3 +1,5 @@
+import streamlit as st
+
 balance = 5000
 pin = 1234
 attempts = 3
