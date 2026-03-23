@@ -6,7 +6,6 @@ transactions = []
 def check_balance():
   st.write(" Current Balance:", balance)
 def deposit_money():
-  global balance
   amount = int(input("Enter deposit amount: "))
   if amount > 0:
     balance += amount
@@ -18,15 +17,15 @@ def withdraw_money():
     global balance
     amount = int(input("Enter withdrawal amount: "))
     if amount > daily_limit:
-        st.write(" Daily limit exceeded")
+      st.write(" Daily limit exceeded")
     elif amount > balance:
-       st.write(" Insufficient balance")
+      st.write(" Insufficient balance")
     elif amount <= 0:
-        st.write(" Invalid amount")
+      st.write(" Invalid amount")
     else:
-        balance -= amount
-        transactions.append(f"Withdrawn: {amount}")
-        st.write(" Please collect your cash")
+      balance -= amount
+      transactions.append(f"Withdrawn: {amount}")
+      st.write(" Please collect your cash")
 def mini_statement():
     if not transactions:
         st.write("No transactions yet")
