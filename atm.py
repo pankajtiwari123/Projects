@@ -4,16 +4,16 @@ attempts = 3
 daily_limit = 2000
 transactions = []
 def check_balance():
-    st.write(" Current Balance:", balance)
+  st.write(" Current Balance:", balance)
 def deposit_money():
-    global balance
-    amount = int(input("Enter deposit amount: "))
-    if amount > 0:
-        balance += amount
-        transactions.append(f"Deposited: {amount}")
-        st.write(" Deposit successful")
-    else:
-       st.write(" Invalid amount")
+  global balance
+  amount = int(input("Enter deposit amount: "))
+  if amount > 0:
+    balance += amount
+    transactions.append(f"Deposited: {amount}")
+    st.write(" Deposit successful")
+  else:
+    st.write(" Invalid amount")
 def withdraw_money():
     global balance
     amount = int(input("Enter withdrawal amount: "))
