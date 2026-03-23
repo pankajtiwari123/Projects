@@ -8,7 +8,7 @@ transactions = []
 def check_balance():
     st.write("Current Balance:", balance)
 def deposit_money():
-    amount = st.number_input("Enter deposit amount: ")
+    amount = st.number_input()
     if amount > 0:
        balance += amount
        transactions.append(f"Deposited: {amount}")
